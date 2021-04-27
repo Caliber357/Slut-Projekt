@@ -4,11 +4,26 @@ namespace Slut_Projekt
 {
     class Program
     {
-        static List<rngWeapon> UserWeapons = new List<rngWeapon>();
+        
         static void Main(string[] args)
-        {    
-            WeaponSpawner spawner = new WeaponSpawner();
-            rngWeapon weapon = spawner.Spawner();
+        {
+            Dictionary<string, string> UserWeapons = new Dictionary<string, string>();
+            bool end = false;
+            while (!end)
+            {
+                string choice = Console.ReadLine();
+                if (choice == "end")
+                {
+                    end = true;
+                }
+                else
+                {
+                    WeaponSpawner spawner = new WeaponSpawner();
+                    rngWeapon weapon = spawner.Spawner();
+                }
+            }
+
+
         }
     }
 }
