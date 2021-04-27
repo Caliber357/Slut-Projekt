@@ -4,14 +4,17 @@ namespace Slut_Projekt
 {
     class Program
     {
-        
+
+
         static void Main(string[] args)
         {
-            Dictionary<string, string> UserWeapons = new Dictionary<string, string>();
+            Dictionary<string, rngWeapon> UserWeapons = new Dictionary<string, rngWeapon>();
+            Dictionary<string, Dictionary<string, int>> reeeee = new Dictionary<string, Dictionary<string, int>>();
             bool end = false;
             while (!end)
             {
                 string choice = Console.ReadLine();
+
                 if (choice == "end")
                 {
                     end = true;
@@ -20,6 +23,7 @@ namespace Slut_Projekt
                 {
                     WeaponSpawner spawner = new WeaponSpawner();
                     rngWeapon weapon = spawner.Spawner();
+                    UserWeapons.Add(weapon.Name, weapon);
                 }
             }
 

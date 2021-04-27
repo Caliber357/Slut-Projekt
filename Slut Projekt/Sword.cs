@@ -6,7 +6,7 @@ namespace Slut_Projekt
     {
 
         public Sword(){
-            string name = "sword";
+            Name = "sword";
             System.Console.WriteLine("I am sword");
         }
 
