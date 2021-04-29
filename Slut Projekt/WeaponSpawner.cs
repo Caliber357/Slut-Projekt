@@ -4,36 +4,33 @@ namespace Slut_Projekt
 {
     public class WeaponSpawner
     {
-        RngWeapon whatever = new RngWeapon();
+        RngWeapon weapon = new RngWeapon();
+        // Instansierar klassen "RngWeapon"
         Random rng = new Random();
 
         public RngWeapon Spawner()
+        // Switchen använder Randomen "rng" för att kunna assigna en subklass av "RngWeapon" till den ny gjorda weapon
         {
             switch (rng.Next(4))
             {
                 case 0:
-                    whatever = new Sword();
+                    weapon = new Sword();
                     break;
                 case 1:
-                    whatever = new Bow();
+                    weapon = new Bow();
                     break;
                 case 2:
-                    whatever = new Axe();
+                    weapon = new Axe();
                     break;
                 case 3:
-                    whatever = new Scythe();
+                    weapon = new Scythe();
                     break;
                 default:
                     System.Console.WriteLine("ooops");
                     break;
             }
 
-            return whatever;
+            return weapon;
         }
-
-
-
-
-
     }
 }
