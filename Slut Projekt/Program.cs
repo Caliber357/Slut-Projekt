@@ -41,7 +41,7 @@ namespace Slut_Projekt
                     {
                         
                         UserWeapons[weapon.Name] = weapon.stats;
-                        System.Console.WriteLine($"already contains a {weapon.Name}");
+                        System.Console.WriteLine($"Replaced your old {weapon.Name}");
                     }
                     // Om det finns en weapon med samma index
                 }
