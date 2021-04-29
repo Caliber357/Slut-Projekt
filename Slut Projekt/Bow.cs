@@ -2,7 +2,7 @@ using System;
 
 namespace Slut_Projekt
 {
-    public class Bow: rngWeapon
+    public class Bow: RngWeapon
     {
         public Bow(){
             Name = "bow";

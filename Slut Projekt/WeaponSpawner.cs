@@ -4,10 +4,10 @@ namespace Slut_Projekt
 {
     public class WeaponSpawner
     {
-        rngWeapon whatever = new rngWeapon();
+        RngWeapon whatever = new RngWeapon();
         Random rng = new Random();
 
-        public rngWeapon Spawner()
+        public RngWeapon Spawner()
         {
             switch (rng.Next(4))
             {
